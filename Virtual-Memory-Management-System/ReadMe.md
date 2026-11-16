@@ -2,11 +2,11 @@
 
 # Hierarchical Virtual Memory Management System
 
-This project implements a **virtual memory management system in C++** using hierarchical page tables. It was developed as part of an Operating Systems course at HUJI and simulates low-level memory operations including translation, allocation, swapping, and eviction — all under strict memory usage constraints.
+This project implements a **virtual memory management system in C++** using hierarchical page tables. It was developed as part of an Operating Systems course at HUJI and simulates low-level memory operations including translation, allocation, swapping, and eviction, all under strict memory constraints.
 
 ---
 
-## 🧠 Core Concepts
+## Core Concepts
 
 - **Hierarchical Page Tables**  
   Used to translate virtual addresses into physical addresses using multi-level table traversal.
@@ -22,7 +22,7 @@ This project implements a **virtual memory management system in C++** using hier
 
 ---
 
-## 🚀 Features
+## Features
 
 - **Virtual to Physical Address Translation**  
   Traverses multiple levels of page tables to resolve virtual addresses.
@@ -41,7 +41,7 @@ This project implements a **virtual memory management system in C++** using hier
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 
 1. **Memory Initialization**  
    The root of the page table hierarchy is stored in frame 0.
@@ -57,7 +57,7 @@ This project implements a **virtual memory management system in C++** using hier
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 | File | Description |
 |------|-------------|
@@ -70,7 +70,7 @@ This project implements a **virtual memory management system in C++** using hier
 
 ---
 
-## 🧪 Tests
+## Tests
 
 The repository includes a test case: `SimpleTest.cpp`
 
@@ -89,7 +89,7 @@ The repository includes a test case: `SimpleTest.cpp`
 
 ---
 
-## 📦 Compilation
+## Compilation
 
 To build the project:
 ```bash
@@ -105,14 +105,14 @@ Ensure your environment has a compatible `g++` compiler and `cmake` if you use t
 
 ---
 
-## 📜 License
+## License
 
 This project was developed as part of the Operating Systems course at the Hebrew University of Jerusalem and is intended for academic and educational use only.
 
 ---
 
-## 📬 Contact
+## Contact
 
 For questions or collaboration:
-- 📧 Email: yairthfc@gmail.com
-- 🔗 LinkedIn: [linkedin.com/in/yairmahfud](https://www.linkedin.com/in/yairmahfud)
+- Email: yairthfc@gmail.com
+- LinkedIn: [linkedin.com/in/yairmahfud](https://www.linkedin.com/in/yairmahfud)

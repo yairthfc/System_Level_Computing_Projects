@@ -5,9 +5,9 @@ This project implements a **user-level thread library** for Linux-based systems.
 
 ---
 
-## 🧠 Project Overview
+## Project Overview
 
-This library provides **Round-Robin scheduling** with fixed time slices and **preemptive context switching** using Linux signals and timers (`setitimer`, `sigaction`). It allows thread creation, blocking, resumption, termination, and sleeping — all at the user level.
+This library provides **Round-Robin scheduling** with fixed time slices and **preemptive context switching** using Linux signals and timers (`setitimer`, `sigaction`). It allows thread creation, blocking, resumption, termination, and sleeping, all at user level.
 
 Internally, the system uses:
 - A **ready queue** for scheduling
@@ -16,7 +16,7 @@ Internally, the system uses:
 
 ---
 
-## 🚀 Features
+## Features
 
 - **Thread Lifecycle Management**  
   Create, block, resume, and terminate threads entirely at the user level.
@@ -35,7 +35,7 @@ Internally, the system uses:
 
 ---
 
-## 🧩 API Reference
+## API Reference
 
 ```cpp
 int uthread_init(int quantum_usecs);
@@ -60,7 +60,7 @@ int uthread_terminate(int tid);
 
 ---
 
-## 🧪 Test Cases
+## Test Cases
 
 The repository includes **external test cases** to verify the correctness and robustness of the thread library. These are available but commented out by default.
 
@@ -76,7 +76,7 @@ The repository includes **external test cases** to verify the correctness and ro
 
 ---
 
-## 📦 Compilation
+## Compilation
 
 To build the library:
 ```bash
@@ -92,14 +92,14 @@ make clean
 
 ---
 
-## 📜 License
+## License
 
 This project was developed as part of the Operating Systems course at the Hebrew University of Jerusalem and is intended for educational and personal use.
 
 ---
 
-## 📬 Contact
+## Contact
 
 For questions or collaboration:
-- 📧 Email: yairthfc@gmail.com
-- 🔗 LinkedIn: [linkedin.com/in/yairmahfud](https://www.linkedin.com/in/yairmahfud)
+- Email: yairthfc@gmail.com
+- LinkedIn: [linkedin.com/in/yairmahfud](https://www.linkedin.com/in/yairmahfud)

@@ -7,7 +7,7 @@ The framework enables parallel data processing using the classic **Map → Sort 
 
 ---
 
-## 🧠 Project Objectives
+## Project Objectives
 
 - Build a complete MapReduce **framework** (not just a client)
 - Enable **multi-threaded processing** of large datasets
@@ -17,9 +17,9 @@ The framework enables parallel data processing using the classic **Map → Sort 
 
 ---
 
-## 🚀 Technical Highlights
+## Technical Highlights
 
-### ✅ Core Features
+### Core Features
 - Configurable multithreading (`multiThreadLevel`)
 - Full lifecycle management: start, monitor, wait, and cleanup
 - Support for any client-defined `map()` and `reduce()` logic
@@ -27,7 +27,7 @@ The framework enables parallel data processing using the classic **Map → Sort 
 - Shuffle logic implemented in a single thread for correctness
 - Thread-local intermediate storage to eliminate output collisions
 
-### 🔐 Thread Safety and Performance Design
+### Thread Safety and Performance Design
 
 - **Thread Coordination**: All synchronization done using low-level POSIX primitives (`pthread_mutex`, `sem_t`)
 - **Atomic State Tracking**: 64-bit atomic variable stores both current phase and percentage completion
@@ -37,7 +37,7 @@ The framework enables parallel data processing using the classic **Map → Sort 
 
 ---
 
-## 🧱 Architecture Overview
+## Architecture Overview
 
 The framework is divided into:
 - **Client logic**: Provides `map()` and `reduce()` functions via `MapReduceClient`
@@ -63,7 +63,7 @@ The framework is divided into:
 
 ---
 
-## 📁 File Structure
+## File Structure
 
 ```
 MapReduceFramework.cpp         # Your full framework implementation
@@ -75,7 +75,7 @@ README.md                      # You're reading it
 
 ---
 
-## 🛠️ How to Use the Framework
+## How to Use the Framework
 
 1. Implement a client class with `map()` and `reduce()` (see `MapReduceClient.h`)
 2. Prepare an input vector of type `InputVec = std::vector<std::pair<K1*, V1*>>`
@@ -99,11 +99,11 @@ README.md                      # You're reading it
 
 ---
 
-## 📈 Testing & Verification
+## Testing & Verification
 
 Framework was tested using:
-- ✅ Provided TA6 client (character frequency count)
-- ✅ Custom clients with:
+- Provided TA6 client (character frequency count)
+- Custom clients with:
   - Large datasets
   - Duplicate keys
   - High thread count
@@ -113,12 +113,12 @@ Framework was tested using:
 - No memory leaks or crashes
 - Correct sorting/shuffling of keys
 - Fully deterministic output regardless of thread count
-- Race condition–free output handling
+- Race condition-free output handling
 - Reduced runtime with increasing threads (scaling verified)
 
 ---
 
-## ⚠️ Notes & Constraints
+## Notes & Constraints
 
 - Uses **only** `pthread_`, `sem_`, and `std::atomic`
 - **C++11+ threading is forbidden** (`std::thread`, `std::mutex`, etc.)
@@ -129,7 +129,7 @@ Framework was tested using:
 
 ---
 
-## 📦 Build Instructions
+## Build Instructions
 
 Compile using:
 ```bash
@@ -150,16 +150,16 @@ You **do not** need to submit the `.h` files provided with the exercise.
 
 ---
 
-## 📬 Contact
+## Contact
 
 For any questions or feedback:
 
-- 📧 Email: yairthfc@gmail.com  
-- 🔗 LinkedIn: [linkedin.com/in/yairmahfud](https://www.linkedin.com/in/yairmahfud)
+- Email: yairthfc@gmail.com  
+- LinkedIn: [linkedin.com/in/yairmahfud](https://www.linkedin.com/in/yairmahfud)
 
 ---
 
-## 📜 License
+## License
 
 This project was created as part of the 2025 Operating Systems course at the Hebrew University of Jerusalem.  
 Use is permitted for **educational and non-commercial** purposes only.
